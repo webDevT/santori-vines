@@ -1,8 +1,259 @@
 @import "vars"
 @import "fonts"
 
+//start global style
+body 
+	font-family: $main-font
+	font-size: 16px
+	color: $text-color
+	font-weight: 300
+	background: $white
+.container-fluid 
+	width: 1320px 
+	max-width: 95vw 
+	padding-left: 0 
+	padding-right: 0
+a,
+a:hover 
+	text-decoration: none
+ul 
+	list-style: none
+	padding: 0
+	margin: 0
+.h1 
+	font-size: 48px 
+	color: $white 
+	font-weight: 600
+.h2 
+	font-size: 28px 
+	font-weight: 600
+.label 
+	font-size: 12px 
+	font-family: $primary-font 
+	font-weight: 400 
+	text-transform: uppercase
+	color: #000
+	letter-spacing: 0.1em
+	margin-bottom: 5px
+.input,
+.textarea 
+	width: 100%
+	background: #F9F9F9
+	border: 1px solid rgba(196, 196, 196, 0.5)
+	height: 42px
+	outline: none
+	padding: 0 15px
+	font-size: 14px
+	font-family: $primary-font
+.textarea 
+	height: 200px
+	padding: 10px 15px
+p 
+	margin-bottom: 0
+//end global style
 
+//start top header style
+.top-header 
+	background: $main-color
+	padding: 22px 0
+	color: $white
+	font-size: 14px
+	.container-fluid 
+		display: flex 
+		justify-content: space-between
+.top-header__phone
+	color: $white
+	display: flex 
+	align-items: center
+	img 
+		display: block 
+		margin-right: 10px
+.top-header__phone:hover 
+	color: $white
+.top-header__links
+	display: flex 
+	align-items: center
+.top-header__links
+	color: $white
+.top-header__link
+	color: $white
+	display: block 
+	margin-left: 50px
+.top-header__link:hover 
+	color: #fff
+//end top header style
 
+//start header style
+.header 
+	padding: 20px 0
+	.container-fluid 
+		display: flex 
+		justify-content: space-between
+		align-items: center
+.menu__link 
+	text-transform: uppercase 
+	color: $text-color
+	display: block
+	margin-left: 50px
+.menu__link:hover 
+	color: $text-color
+.menu 
+	display: flex 
+	align-items: center
+	ul 
+		display: flex
+		align-items: center
+.menu__mobile-footer
+	display: none
+//end header style
+
+//start main screen
+.main-screen--contact 
+	padding-top: 170px 
+	padding-bottom: 70px
+	background: linear-gradient(rgba(#71201D, 0.8), rgba(#71201D, 0.8)), url('../img/header-bg.jpeg')
+	background-size: cover
+	background-position: center
+//end main screen
+
+//start contact section style
+.contact 
+	padding: 100px 0
+.contact-form
+	margin-top: 40px
+	max-width: 100%
+.contact-form__row
+	display: flex 
+	justify-content: space-between
+	.input-wrapper 
+		width: 48%
+		
+.input-wrapper
+	display: flex 
+	flex-direction: column
+.input-wrapper
+	margin-bottom: 30px
+.input--submit
+	background: $main-color
+	border: none 
+	text-transform: uppercase
+	color: #fff
+	letter-spacing: 0.08em
+.request-texting__wrapper
+	width: 100%
+	display: flex 
+	justify-content: center
+	max-width: 100%
+	.h2 
+		margin-bottom: 10px
+.request-texting__content
+	width: 314px 
+.request-texting__item
+	margin-bottom: 30px
+.contact-item
+	display: flex
+	align-items: center
+	color: $text-color
+	margin-bottom: 10px
+	img 
+		margin-right: 10px
+.contact-item:hover
+	color: $text-color
+.request-texting__item--two
+	display: flex 
+	justify-content: space-between
+	width: 100%
+.newsletter
+	min-height: 450px
+//end contact section style
+
+//start newsletter section
+.newsletter
+	background: linear-gradient(0deg, rgba(43, 39, 38, 0.7), rgba(43, 39, 38, 0.7)), url('../img/newsletter-bg.jpeg')
+	background-repeat: no-repeat 
+	background-size: cover
+	background-position: center
+	color: $white
+	.container-fluid 
+		display: flex 
+		justify-content: flex-end
+		align-items: center
+		min-height: 450px
+.newsletter__content
+	width: 543px 
+	max-width: 100%
+.newsleter__text
+	font-size: 18px 
+	margin-top: 8px 
+	margin-bottom: 50px	
+.newsletter__form
+	width: 100%
+	display: flex
+	position: relative
+.newsletter-input
+	width: 100%
+	background: transparent
+	height: 60px
+	border: none
+	outline: none
+	border-bottom: 1px solid $white
+	padding-left: 10px
+	padding-right: 60px
+	color: $white
+	font-size: 24px
+.newsletter-input::placeholder
+	color: $white
+.newsletter-input-submit
+	width: 55px 
+	height: 100% 
+	padding-right: 15px
+	cursor: pointer
+	border: none 
+	position: absolute
+	background-color: transparent
+	background-image: url('../img/arrow.svg')
+	background-repeat: no-repeat 
+	background-position: center
+	right: 0 
+	top: 50% 
+	transform: translateY(-50%)
+//end newsletter section
+
+//start footer-style
+.footer 
+	background: $main-color
+	padding-top: 60px 
+	padding-bottom: 56px
+	color: $white
+	p 
+		margin-bottom: 30px 
+	p:last-child 
+		margin-bottom: 0
+	.container-fluid
+		display: flex 
+		justify-content: space-between
+.footer-col--first
+	display: flex 
+	flex-direction: column 
+	justify-content: space-between
+.footer__icon
+	margin-left: 20px
+.footer-col__title
+	text-transform: uppercase
+	font-family: $primary-font
+	font-weight: 600 
+	font-size: 12px
+	margin-bottom: 12px
+.footer-link
+	display: flex
+	color: $white
+	margin-bottom: 5px
+.footer-link:hover 
+	color: $white
+.footer__copy 
+	margin-top: 10px
+
+//end footer style
 
 @import "media"
 

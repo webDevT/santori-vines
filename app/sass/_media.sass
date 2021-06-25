@@ -10,16 +10,157 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
+	.menu__link 
+		margin-left: 20px
+	.request-texting__wrapper
+		justify-content: flex-start
+		margin-top: 40px
+	.footer
+		position: relative
+		padding-bottom: 130px
+		.container-fluid
+			display: flex
+			flex-wrap: wrap
+	.footer-col--first 
+		width: 100%
+		margin-bottom: 40px
+		display: flex 
+		justify-content: center
+		flex-direction: row
+	.footer__bottom
+		position: absolute
+		bottom: 30px
+		text-align: center
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
+	.menu
+		display: none
+	.menu__btn 
+		cursor: pointer
+	.menu__row 
+		width: 28px
+		height: 2px 
+		background: #2B2726
+		margin-bottom: 5px
+		transition: all 0.3s
+	.menu__row:last-child 
+		margin-bottom: 0
+	.menu__btn.active 
+		.menu__row:last-child 
+			display: none
+		.menu__row:first-child 
+			transform: rotate(-45deg)
+			margin-bottom: 0
+			position: relative
+			top: 2px
+		.menu__row:nth-child(2)
+			transform: rotate(45deg)
+	.header 
+		position: relative
+		padding: 11px 0
+
+	.menu.active 
+		background: $white
+		display: flex
+		flex-direction: column 
+		justify-content: space-between 
+		min-height: calc(100vh - 90px)
+		position: absolute 
+		top: 115px
+		width: 100%
+		left: 0
+		padding-top: 11.1vw
+		padding-bottom: 7.246vw
+		z-index: 9999
+
+		ul 
+			display: block
+			li 
+				text-align: center
+	.menu__link 
+		margin-left: 0
+		font-size: 21px 
+		font-weight: 700
+		margin-bottom: 6.039vw
+	.menu__mobile-footer
+		display: flex
+		width: 100%
+		padding-bottom: 10vw
+		.container-fluid
+			justify-content: space-between
+			align-items: center
+			display: flex
+	.menu__mobile-social
+		display: flex 
+		align-items: center
+	.menu__mobile-social-link
+		display: flex
+		margin-left: 20px
+	.login-mobile,
+	.login-mobile:hover
+		color: $text-color
+	.footer-col:nth-child(2)
+		width: 100%
+		display: flex
+	.footer_adress
+		width: 50%
+	.footer-col
+		margin-bottom: 40px
+	.footer-col:nth-child(3),
+	.footer-col:nth-child(4),
+	.footer-col:nth-child(5)
+		width: 50%
+	.footer-col:nth-child(5)
+		transform: translateX(100%)
+		margin-top: -59%
+
+
+
+		
+	
+
+
+
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
+	.container-fluid 
+		max-width: 83.092vw
+	.top-header__link:nth-child(2)
+		display: none
+	.top-header__link
+		margin-left: 20px
+	.top-header 
+		font-size: 12px
+		padding: 11.5px 0
+	.logo 
+		img 
+			width: 72.7px
+	.menu.active 
+		top: 48px
+	.h1 
+		font-size: 11.594vw
+	.main-screen--contact 
+		padding-top: 20vw 
+		padding-bottom: 5vw
+	.contact-form__row
+		flex-direction: column
+		.input-wrapper
+			width: 100%
+	.contact
+		padding: 15vw 0
+	.newsletter-input
+		font-size: 5.797vw
+	.footer 
+		padding-bottom: 100px
+
+
+
 
 
 /* Custom, iPhone Retina */
