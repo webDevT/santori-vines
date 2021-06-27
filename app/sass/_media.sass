@@ -3,6 +3,15 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px)
+	/**/
+	.product-text
+		margin: 20px 0
+	.product__items
+		margin-bottom: 20px
+	.shop__item-footer-row--product
+		margin-bottom: 20px
+/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
 	.shop__list
@@ -10,6 +19,12 @@
 		margin-right: -15px
 	.shop__item-wrapper
 		padding: 0 15px
+	.product .h1
+		font-size: 38px
+	.visit-content__img
+		max-width: 55%
+		img 
+			max-width: 100%
 
 
 /* Medium Devices, Desktops */
@@ -42,6 +57,25 @@
 	.shop__item-wrapper
 		padding: 0 15px
 		width: 50%
+	.product-img
+		margin-bottom: 30px
+	.visit-main-screen
+		min-height: 70vw
+		padding-bottom: 5vw
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30.92%, #2B2726 100%), url('../img/visit-bg.png')
+		background-size: cover 
+		background-position: center 
+		background-repeat: no-repeat
+	.visit-content__row
+		flex-direction: column
+		.visit-content__img
+			width: 100%
+			max-width: 100%
+			order: 1
+		.visit-content__wrapper
+			order: 2
+		img 
+			width: 100%
 
 
 
@@ -142,6 +176,20 @@
 		min-height: auto
 	.shop__item-header-text
 		min-height: auto
+	.visit-content
+		padding-top: 50px
+	.visit-content .h2
+		margin-bottom: 30px
+	.visit-content__row
+		margin-bottom: 70px
+	.prev, 
+	.next 
+		display: none !important
+	.slider__content
+		max-width: 100%
+	.slick-dots
+		button
+			margin: 0 7.5px
 
 
 /* Extra Small Devices, Phones */
@@ -192,6 +240,30 @@
 		margin-bottom: 5vw
 	.explore
 		padding-bottom: 90px
+	.product .h1
+		font-size: 10vw
+	.back
+		margin-bottom: 30px
+	.product-img
+		margin-bottom: 10px
+	.visit-main-screen
+		.h1 
+			font-size: 10vw
+			margin-bottom: 1vw
+		.visit__text
+			font-size: 4.2vw
+			line-height: 1.2
+	.slider__content
+		p 
+			font-size: 21px
+	.slider-content__footer
+		font-size: 14px
+	.slider__content
+		margin: 29px 0
+	.slider-wrapper
+		margin-top: 20px
+
+
 
 
 

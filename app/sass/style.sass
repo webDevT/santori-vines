@@ -64,6 +64,7 @@ p
 	font-weight: 500 
 	font-family: $primary-font
 	text-transform: uppercase
+	height: 44px
 .button:hover 
 	color: $white
 .button--transparent
@@ -469,8 +470,278 @@ p
 		margin-left: 15px
 .explore-button:hover 
 	color: $white
-
 //end explore section
+
+//start product style
+.product 
+	padding-top: 30px 
+	padding-bottom: 60px
+	.h1 
+		color: $text-color
+		text-transform: none
+		margin-bottom: 20px
+		font-weight: 700
+		line-height: 1
+.product-img
+	width: 100%
+.back
+	display: flex 
+	align-items: center 
+	color: $text-color
+	margin-bottom: 40px
+	img 
+		margin-right: 10px
+.back:hover
+	color: $text-color
+.product__label
+	display: flex 
+	align-items: center
+	font-size: 10px 
+	font-weight: 400 
+	font-family: $primary-font
+	text-transform: uppercase
+	img 
+		margin-right: 7px
+.product-text
+	margin: 40px 0
+	font-size: 18px
+.product__items
+	margin-bottom: 40px
+.product__item
+	font-size: 18px
+	font-weight: 400
+	span 
+		color: #9E9F9A
+.shop__item-price--product
+	text-align: left
+	justify-content: flex-start
+	height: auto
+	font-size: 36px
+.shop__item-footer-row--product
+	justify-content: flex-start
+	margin-left: 0
+	margin-top: 30px
+//end product style
+
+//start visit main screen
+.visit-main-screen
+	min-height: 700px 
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 47.92%, #2B2726 100%), url('../img/visit-bg.png')
+	background-size: cover 
+	background-position: center 
+	background-repeat: no-repeat
+	padding-bottom: 67px 
+	display: flex 
+	align-items: flex-end
+	color: $white
+.visit__text
+	font-size: 21px
+//end visit main screen
+
+//start visit content style
+.visit-content
+	padding-top: 100px 
+	.h2 
+		margin-top: 20px 
+		margin-bottom: 50px
+.visit-content__wrapper
+	max-width: 418px
+.visit-content__row
+	display: flex
+	margin-bottom: 100px
+	justify-content: space-between
+.visit-content__img
+	img 
+		box-shadow: 0px 0px 12px 5px rgba(43, 39, 38, 0.25)
+.visit-content__text
+	font-size: 21px
+.visit-content__adress
+	font-size: 18px
+	margin-top: 20px 
+	margin-bottom: 49px
+.visit-content__buttons
+	width: 322px 
+	display: flex 
+	justify-content: space-between
+	max-width: 100%
+	.button 
+		width: 48%
+		font-size: 14px
+//end visit content style
+
+//start slick style
+.slick-slider
+	position: relative
+	display: block
+	box-sizing: border-box
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	-webkit-touch-callout: none
+	-khtml-user-select: none
+	-ms-touch-action: pan-y
+	touch-action: pan-y
+	-webkit-tap-highlight-color: transparent
+.slick-list
+	position: relative
+	display: block
+	overflow: hidden
+	margin: 0
+	padding: 0
+.slick-list:focus
+	outline: none
+.slick-list.dragging
+	cursor: pointer
+	cursor: hand
+.slick-slider .slick-track,
+.slick-slider .slick-list
+	-webkit-transform: translate3d(0, 0, 0)
+	-moz-transform: translate3d(0, 0, 0)
+	-ms-transform: translate3d(0, 0, 0)
+	-o-transform: translate3d(0, 0, 0)
+	transform: translate3d(0, 0, 0)
+.slick-track
+	position: relative
+	top: 0
+	left: 0
+	display: block
+	margin-left: auto
+	margin-right: auto
+.slick-track:before,
+.slick-track:after
+	display: table
+	content: ''
+.slick-track:after
+	clear: both
+.slick-loading .slick-track
+	visibility: hidden
+.slick-slide
+	display: none
+	float: left
+	height: 100%
+	min-height: 1px
+[dir='rtl'] .slick-slide
+	float: right
+.slick-slide img
+	display: block
+.slick-slide.slick-loading img
+	display: none
+.slick-slide.dragging img
+	pointer-events: none
+.slick-initialized .slick-slide
+	display: block
+.slick-loading .slick-slide
+	visibility: hidden
+.slick-vertical .slick-slide
+	display: block
+	height: auto
+	border: 1px solid transparent
+.slick-arrow.slick-hidden
+	display: none
+//end slick style
+
+//start reviews section
+.section-title 
+	text-align: center 
+	text-transform: uppercase
+	font-size: 14px 
+	font-weight: 400 
+	font-family: $primary-font
+.slider-wrapper
+	margin-top: 50px	
+.quote-img
+	margin: 0 auto
+.slider__content
+	width: 829px 
+	max-width: 70% 
+	margin: 65px auto
+	p 
+		font-size: 32px
+		line-height: 1.2
+.slider-content__footer
+	display: flex
+	margin-top: 25px
+	font-family: $primary-font
+	font-weight: 400
+	justify-content: space-between
+.slider-wrapper
+	position: relative
+.prev 
+	position: absolute
+	left: 0 
+	top: 35%
+	z-index: 99
+	cursor: pointer
+.next 
+	position: absolute
+	right: 0 
+	top: 35%
+	z-index: 99
+	cursor: pointer
+.slick-dots
+	display: flex 
+	justify-content: center
+	button
+		width: 15px 
+		height: 15px 
+		font-size: 0
+		border-radius: 50%
+		border: none 
+		margin: 0 10px
+		outline: none
+		background: #E5E5E5
+	.slick-active
+		button 
+			background: $main-color 
+.reviews
+	padding-bottom: 80px
+//end reviews section
+
+//start visit us style
+.visit-us
+	min-height: 450px
+	background: linear-gradient(0deg, rgba(43, 39, 38, 0.75), rgba(43, 39, 38, 0.75)), url(../img/visit-us.png)
+	background-size: cover 
+	background-position: center
+	text-align: center
+	color: $white
+	display: flex
+	align-items: center
+	padding: 30px 0
+.visit-us__contnent
+	width: 403px 
+	max-width: 100% 
+	margin: 0 auto
+.visit-us__title
+	font-size: 56px 
+	font-weight: 700
+	text-transform: uppercase
+.visit-us__text
+	font-size: 24px
+	line-height: 1.2
+.visit-us__buttons
+	width: 342px 
+	max-width: 100%
+	display: flex 
+	justify-content: space-between
+	margin: 0 auto
+	margin-top: 50px
+.visit-us__button
+	width: 48%
+	font-size: 14px 
+	font-weight: 500 
+	font-family: $primary-font
+	color: $white
+	text-transform: uppercase
+	border: 1px solid $white
+	height: 44px
+	display: flex 
+	justify-content: center
+	align-items: center
+.visit-us__button:hover 
+	color: $white
+//end visit us style
 
 @import "media"
 

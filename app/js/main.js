@@ -12,4 +12,14 @@ $('.menu__item').click(function(){
 	$(this).find('.sub-menu').toggleClass('active');
 })
 //end sub-menu open-close
+
+//start slider init
+$('.slider').slick({
+  slidesToShow: 1,
+  dots: true,
+  prevArrow: $('.prev'),
+  nextArrow: $('.next')
+})
+//end slider intit
+
 });
