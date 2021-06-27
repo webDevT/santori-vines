@@ -6,4 +6,10 @@ $('.menu__btn').click(function(){
 	$('.menu').toggleClass('active');
 })
 //end mobil-menu open-close
+
+//start sub-menu open-clos
+$('.menu__item').click(function(){
+	$(this).find('.sub-menu').toggleClass('active');
+})
+//end sub-menu open-close
 });

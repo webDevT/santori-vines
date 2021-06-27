@@ -24,6 +24,7 @@ ul
 	font-size: 48px 
 	color: $white 
 	font-weight: 600
+	text-transform: uppercase
 .h2 
 	font-size: 28px 
 	font-weight: 600
@@ -45,11 +46,35 @@ ul
 	padding: 0 15px
 	font-size: 14px
 	font-family: $primary-font
+
 .textarea 
 	height: 200px
 	padding: 10px 15px
 p 
 	margin-bottom: 0
+.white 
+	color: $white
+.button 
+	background: $main-color 
+	display: flex 
+	justify-content: center 
+	align-items: center
+	color: $white 
+	font-size: 17px
+	font-weight: 500 
+	font-family: $primary-font
+	text-transform: uppercase
+.button:hover 
+	color: $white
+.button--transparent
+	background: transparent
+	border: 1px solid $main-color 
+	background: $white 
+	color: $main-color
+.button--transparent:hover 
+	color: $main-color	
+.button--transparent--no-border
+	border: none
 //end global style
 
 //start top header style
@@ -105,6 +130,39 @@ p
 		align-items: center
 .menu__mobile-footer
 	display: none
+.menu__item 
+	position: relative
+.sub-menu 
+	position: absolute 
+	top: 100%
+	left: 50px
+	z-index: 999
+	background: $white
+	border: 0.5px solid rgba(113, 32, 29, 0.2)
+	min-width: 200px 
+	transform: translateY(17px)
+	padding: 15px
+	display: none
+.menu__item:hover 
+	.sub-menu 
+		display: block
+
+.sub-menu__link
+	font-size: 14px
+	text-transform: uppercase 
+	color: $text-color
+	margin-bottom: 30px
+	display: block
+.sub-menu__link:last-child 
+	margin-bottom: 0
+.sub-menu__link:hover
+	color: $text-color
+.sub-menu:before 
+	content: url('../img/triangle.svg')
+	position: absolute 
+	top: 0 
+	left: 18px 
+	transform: translateY(-21px)
 //end header style
 
 //start main screen
@@ -114,6 +172,18 @@ p
 	background: linear-gradient(rgba(#71201D, 0.8), rgba(#71201D, 0.8)), url('../img/header-bg.jpeg')
 	background-size: cover
 	background-position: center
+.main-screen__text
+	width: 613px 
+	max-width: 100%
+	font-size: 21px
+	margin-top: 20px
+	line-height: 1.2
+.main-screen--shop
+	background: linear-gradient(rgba(#71201D, 0.8), rgba(#71201D, 0.8)), url('../img/header-bg.jpeg')
+	background-size: cover
+	background-position: center
+	padding-top: 170px 
+	padding-bottom: 70px
 //end main screen
 
 //start contact section style
@@ -252,8 +322,155 @@ p
 	color: $white
 .footer__copy 
 	margin-top: 10px
-
 //end footer style
+
+//start shop section style
+.shop 
+	padding-bottom: 90px
+	overflow: hidden
+	.col-md-4
+		pa
+.shop-item__img
+	width: 100%
+.shop__list
+	display: flex
+	flex-wrap: wrap
+	margin-left: -60px
+	margin-right: -60px
+.shop__item-wrapper
+	width: 33.333%
+	padding: 0 60px
+	margin-top: 100px
+.shop__item
+	text-align: center
+	color: $text-color
+	min-height: 640px
+	display: block
+	display: flex 
+	flex-direction: column 
+	justify-content: space-between
+.shop__item:hover 
+	color: $text-color
+.shop-item__year
+	font-size: 12px 
+	font-family: $primary-font
+	font-weight: 400
+	margin-top: 25px 
+	margin-bottom: 5px
+	display: block
+.shop-item__title
+	font-size: 32px 
+	font-weight: 700
+.shop__item-price
+	font-size: 48px 
+	font-weight: 700
+	margin-bottom: 30px
+	display: block
+.shop__item-footer-row
+	display: flex
+	align-items: center
+	margin-top: 10px
+	height: 52px
+	width: 237px
+	justify-content: space-between
+.input-num
+	width: 58px 
+	height: 100%
+	text-align: center
+	background: rgba(158, 159, 154, 0.1)
+	border: 1px solid rgba(43, 39, 38, 0.1)
+	display: flex 
+	margin-right: 10px
+	font-size: 17px 
+	font-weight: 500 
+	font-family: $primary-font
+	padding-left: 17px
+.shop__item-header,
+.shop__item-header:hover
+	color: $text-color 
+
+.shop__item-footer-row
+	width: 237px 
+	max-width: 100% 
+	margin: 0 auto
+	margin-top: 10px
+	.button 
+		height: 100%
+		width: 173px
+	.button--transparent
+		width: 100%
+.sold-out
+	font-size: 17px 
+	font-weight: 500 
+	font-family: $primary-font 
+	color: $main-color 
+	text-transform: uppercase
+	margin-bottom: 40px
+.shop-item__sub-title
+	font-size: 14px 
+	font-family: $primary-font 
+	font-weight: 400
+	text-transform: uppercase
+	margin-top: 5px
+	display: block
+.shop__item-price,
+.sold-out
+	margin-bottom: 0
+	height: 100px 
+	display: flex
+	align-items: center
+	justify-content: center
+.shop__item-header-text
+	min-height: 150px
+	display: block
+//end shop section style
+
+//start explore section
+.explore 
+	padding-bottom: 100px
+	.container-fluid 
+		background: linear-gradient(0deg, rgba(43, 39, 38, 0.9), rgba(43, 39, 38, 0.9)), url('../img/explore.png')
+		background-size: cover 
+		background-position: center 
+		background-repeat: no-repeat
+		padding: 65px 44px
+.explore__content
+	width: 100%
+	height: 100%
+	border: 1px solid $white
+	padding: 30px 10px
+.explore__wrapper
+	width: 722px 
+	max-width: 100%
+	color: $white
+	margin: 0 auto
+	text-align: center
+	display: flex 
+	flex-direction: column
+	align-items: center
+.explore__title
+	font-size: 48px
+	line-height: 1.2
+	margin-bottom: 37px
+.explore-button
+	width: 348px 
+	max-width: 100% 
+	display: flex 
+	align-items: center
+	justify-content: center
+	font-size: 17px 
+	font-weight: 500
+	font-family: $primary-font 
+	text-transform: uppercase 
+	height: 48px 
+	border: 1px solid $white
+	color: $white
+	img 
+		margin-left: 15px
+.explore-button:hover 
+	color: $white
+
+//end explore section
 
 @import "media"
 

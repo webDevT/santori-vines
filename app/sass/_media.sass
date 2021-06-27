@@ -5,6 +5,11 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
+	.shop__list
+		margin-left: -15px
+		margin-right: -15px
+	.shop__item-wrapper
+		padding: 0 15px
 
 
 /* Medium Devices, Desktops */
@@ -31,6 +36,13 @@
 		position: absolute
 		bottom: 30px
 		text-align: center
+	.shop__list
+		margin-left: -15px
+		margin-right: -15px
+	.shop__item-wrapper
+		padding: 0 15px
+		width: 50%
+
 
 
 /* Small Devices, Tablets */
@@ -116,14 +128,20 @@
 	.footer-col:nth-child(5)
 		transform: translateX(100%)
 		margin-top: -59%
-
-
-
-		
-	
-
-
-
+	.menu__item:hover 
+		.sub-menu 
+			display: none
+	.menu.active
+		top: 95px
+	.menu__item .sub-menu.active
+		//display: block
+	.shop__item-wrapper
+		width: 100%
+		margin-top: 80px
+	.shop__item
+		min-height: auto
+	.shop__item-header-text
+		min-height: auto
 
 
 /* Extra Small Devices, Phones */
@@ -158,6 +176,22 @@
 		font-size: 5.797vw
 	.footer 
 		padding-bottom: 100px
+	.main-screen__text
+		font-size: 18px
+	.explore__title
+		font-size: 36px
+		font-size: 7vw
+	.explore .container-fluid
+		padding: 15px 15px
+	.explore-button img
+		margin-left: 2vw
+		max-width: 7vw
+	.explore-button
+		font-size: 4vw
+	.explore__title
+		margin-bottom: 5vw
+	.explore
+		padding-bottom: 90px
 
 
 
