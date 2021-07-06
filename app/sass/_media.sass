@@ -26,6 +26,24 @@
 		img 
 			max-width: 100%
 
+	.home-main
+		.menu__link,
+		.menu__btn
+			margin-left: 30px
+	.expiriences.expiriences--white
+		.expiriences__content
+			padding-left: 15px
+	.expiriences__content
+		width: 100%
+	.expiriences__images-wrapper
+		margin-bottom: 20px
+	.event-page__section
+		.expiriences__images-wrapper
+			max-width: 50% 
+			img 
+				max-width: 48% 
+				margin-left: 1%
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -86,6 +104,78 @@
 		width: 100% 
 		max-width: 100% 
 		order: 2
+	.home-main
+		.menu__link,
+		.menu__btn
+			margin-left: 15px
+	.home-main
+		min-height: auto
+	.home-main__content
+		padding-top: 75px
+	.home-item
+		flex-direction: column
+	.home-item__content
+		max-width: 100% 
+		width: 100%
+		order: 2
+	.home-item__image
+		max-width: 100% 
+		width: 100%
+		order: 1
+		margin-bottom: 30px
+	.home-items
+		padding: 15vw 0
+	.follow-us__row
+		flex-direction: column
+	.follow-us__col
+		width: 100% 
+		max-width: 100%
+		margin-bottom: 30px
+	.expiriences__row
+		flex-direction: column
+	.about-wine-club
+		.container-fluid
+			flex-direction: column
+			.img 
+				width: 100%
+				margin-bottom: 30px
+		.about-wine-club__content
+			padding-left: 0 
+			width: 100%
+			max-width: 100%
+	.expiriences
+		padding: 30px 0
+	.expiriences__images-wrapper
+		order: 1
+	.expiriences__content
+		order: 2
+	.expiriences__images-wrapper img
+		margin-left: 0
+		margin: 0 1vw
+		width: 49%
+	.expiriences__slider
+		order: 2
+		margin-top: 30px
+	.event-page__section
+		.expiriences__images-wrapper
+			max-width: 100% 
+			width: 100%
+			img 
+				max-width: 48% 
+				margin: 0 1%
+		.expiriences__images-wrapper img:first-child
+			margin-top: 60px
+	.expiriences__slider
+		width: 100% 
+		max-width: 100%
+
+
+
+
+
+
+
+
 
 
 
@@ -93,28 +183,10 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
+	.menu__btn 
+		display: block
 	.menu
 		display: none
-	.menu__btn 
-		cursor: pointer
-	.menu__row 
-		width: 28px
-		height: 2px 
-		background: #2B2726
-		margin-bottom: 5px
-		transition: all 0.3s
-	.menu__row:last-child 
-		margin-bottom: 0
-	.menu__btn.active 
-		.menu__row:last-child 
-			display: none
-		.menu__row:first-child 
-			transform: rotate(-45deg)
-			margin-bottom: 0
-			position: relative
-			top: 2px
-		.menu__row:nth-child(2)
-			transform: rotate(45deg)
 	.header 
 		position: relative
 		padding: 11px 0
@@ -217,6 +289,85 @@
 		padding-top: 50px
 	.news-item
 		margin-bottom: 50px
+	.home-main
+		.menu__link,
+		.menu__btn
+			margin-left: 0px
+		.menu__btn 
+			display: block
+		.menu__link
+			color: $text-color
+		.menu.active
+			ul 
+				display: block
+	.home-item
+		margin-bottom: 20vw
+	.discover__item
+		margin-bottom: 30px
+	.follow-us
+		padding-top: 30px 
+		padding-bottom: 0px
+	.follow-us__title
+		margin-bottom: 35px
+	.follow-us__img
+		margin-bottom: 35px
+	.follow-us__col
+		p 
+			margin-bottom: 35px
+	.follow-us__social-item
+		font-size: 21px
+	.follow-us__col:last-child 
+		border-top: 1px solid rgba(196, 196, 196, 0.4)
+		padding-top: 30px
+	.latest-news__item-title
+		font-size: 18px
+	.latest-news__item p
+		font-size: 16px
+	.expirences__title
+		font-size: 10vw
+		margin-top: 1vw
+	.expirences__title
+		margin-top: 5vw
+	.about-wine-club__content
+		font-size: 18px
+	.about-wine-club__title
+		font-size: 24px
+	.about-wine-club .container-fluid .img
+		margin-bottom: 15px
+	.about-wine-club__title
+		margin-bottom: 15px
+	.expiriences p
+		font-size: 18px
+	.reviews
+		padding-top: 40px 
+		padding-bottom: 40px
+	.plan__item
+		width: 100% 
+		margin-bottom: 30px
+	.plans--grey
+		padding: 30px 0
+	.buttons-wrapper--events
+		flex-direction: column
+		margin-top: 20px
+		.button 
+			width: 100%
+			font-size: 13px
+		.button:first-child
+			width: 100%
+			margin-bottom: 15px
+		.button:nth-child(2)
+			width: 100%
+
+
+
+
+
+
+
+		
+
+
+
 
 
 /* Extra Small Devices, Phones */
@@ -296,6 +447,75 @@
 		padding: 40px 0
 	.news-title
 		font-size: 22px
+	.reviews--grey 
+		padding-top: 80px
+	.home-main 
+		.menu.active
+			top: 58px
+	.home__title
+		font-size: 11.594vw
+	.home-main__content-wrapper p
+		font-size: 18px
+	.home__title
+		margin-bottom: 1vw
+	.home-main__buttons
+		flex-direction: column
+		margin-top: 2.778vw
+		.button 
+			width: 100%
+			margin-bottom: 5vw
+	.home-main__content
+		padding-bottom: 8vw
+	.button 
+		font-size: 3.382vw
+	.home-main__buttons
+		.button 
+			width: 49.517vw
+			height: 10.145vw
+			margin-bottom: 2.415vw
+	.home-items
+		.h1 
+			font-size: 5.797vw
+	.home-item__content
+		font-size: 18px
+	.home-item .h1
+		margin-bottom: 15px
+	.home-item__image
+		margin-bottom: 15px
+	.home-item__list
+		margin-top: 15px
+	.home-item .button
+		margin-top: 30px
+	.discover
+		padding-top: 30px 
+		padding-bottom: 30px
+		.h1
+			font-size: 10vw
+			margin-bottom: 40px
+	.reviews--grey
+		padding-top: 40px 
+		padding-bottom: 40px
+	.latest-news__item .read-more
+		font-size: 12px
+	.follow-us__col p
+		margin-bottom: 15px
+	.plans__title
+		font-size: 8vw
+		margin-bottom: 8vw
+	.section__sub-text
+		margin-bottom: 10vw
+	.close-modal
+		img 
+			width: 7vw
+	.modal-content
+		padding: 5vw 5vw
+		padding-top: 18vw
+	.close-modal
+		top: 5vw 
+		right: 5vw
+
+
+
 	
 
 

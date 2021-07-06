@@ -8,6 +8,7 @@ body
 	color: $text-color
 	font-weight: 300
 	background: $white
+	//position: relative
 .container-fluid 
 	width: 1320px 
 	max-width: 95vw 
@@ -28,6 +29,8 @@ ul
 .h2 
 	font-size: 28px 
 	font-weight: 600
+.black 
+	color: $text-color
 .label 
 	font-size: 12px 
 	font-family: $primary-font 
@@ -65,6 +68,7 @@ p
 	font-family: $primary-font
 	text-transform: uppercase
 	height: 44px
+	cursor: pointer
 .button:hover 
 	color: $white
 .button--transparent
@@ -76,6 +80,14 @@ p
 	color: $main-color	
 .button--transparent--no-border
 	border: none
+.button--transparent-white
+	color: $white
+	background: transparent
+	border-color: $white
+.button--transparent-white:hover 
+	color: #fff
+.red 
+	color: $main-color
 //end global style
 
 //start top header style
@@ -696,6 +708,9 @@ p
 			background: $main-color 
 .reviews
 	padding-bottom: 80px
+.reviews--grey 
+	background: #fbfbfb
+	padding-top: 100px
 //end reviews section
 
 //start visit us style
@@ -879,6 +894,482 @@ p
 	color: $main-color
 //end news
 
+
+.menu__btn 
+	cursor: pointer
+	display: none
+.menu__row 
+	width: 28px
+	height: 2px 
+	background: #2B2726
+	margin-bottom: 5px
+	transition: all 0.3s
+.menu__row:last-child 
+	margin-bottom: 0
+.menu__btn.active 
+	.menu__row:last-child 
+		display: none
+	.menu__row:first-child 
+		transform: rotate(-45deg)
+		margin-bottom: 0
+		position: relative
+		top: 2px
+	.menu__row:nth-child(2)
+		transform: rotate(45deg)
+//start home-main style
+.home-main
+	background: url('../img/home-main.png')
+	background-size: cover
+	background-position: center 
+	background-repeat: no-repeat
+	color: $white
+	.top-header 
+		background: transparent
+		padding-bottom: 0
+		padding-top: 14px
+		.container-fluid 
+			justify-content: flex-end
+	.menu__row 
+		background: #fff
+	.menu__link
+		color: $white
+	.menu__btn
+		display: block
+	.menu ul
+		display: none
+	.menu__btn 
+		margin-left: 50px
+	.menu.active 
+		ul 
+			display: flex
+	.sub-menu
+		border: 1px solid $white
+		background: rgba(255, 255, 255, 0.05)
+		.sub-menu__link
+			color: $white
+	.sub-menu:before
+		content: url('../img/triangle2.svg')
+.home-main__menu
+	display: flex
+	align-items: center
+.home-main__content
+	padding-top: 10vw
+	padding-bottom: 4.583vw
+.home-main__content-wrapper
+	width: 550px
+	max-width: 100%
+	p 
+		font-size: 32px
+.home__title
+	font-size: 72px
+	line-height: 1
+	font-weight: 700
+	margin-bottom: 20px
+.home-main__buttons
+	display: flex
+	justify-content: space-between
+	margin-top: 50px
+	.button 
+		height: 52px
+		width: 48%
+//end home main style
+
+//start home items style
+.home-items
+	padding: 100px 0
+.home-item__image
+	box-shadow: 0px 0px 12px 5px rgba(96, 96, 96, 0.25)
+.home-item
+	display: flex 
+	justify-content: space-between
+	align-items: center
+	font-size: 24px
+
+	.button 
+		margin-top: 60px
+		width: 290px 
+		max-width: 100%
+		height: 52px
+	.h1 
+		font-weight: 700
+		margin-bottom: 30px
+.home-item__content
+	width: 505px 
+	max-width: 100%
+.home-item__list
+	margin-top: 25px
+//end home items style
+
+.home-item__list-item
+	display: flex 
+	align-items: center
+	margin-bottom: 10px
+	i 
+		font-size: 14px
+		color: $main-color
+		margin-right: 10px
+.home-item__image
+	max-width: 50%
+.home-item__content
+	max-width: 50%
+.home-item
+	margin-bottom: 100px
+.home-item:last-child 
+	margin-bottom: 0
+
+//start discover style
+.discover
+	padding: 100px 0
+	p 
+		font-size: 18px
+	.h1 
+		margin-bottom: 80px
+.discover__img
+	box-shadow: 0px 0px 12px 5px rgba(96, 96, 96, 0.25)
+.discover__title
+	margin-top: 35px 
+	margin-bottom: 10px
+	font-size: 32px
+	font-weight: 700
+	text-transform: uppercase
+.read-more
+	display: flex 
+	align-items: center
+	margin-top: 25px
+	font-size: 14px
+	img 
+		margin-left: 10px
+		display: block
+.discover__img
+	width: 100%
+.img 
+	box-shadow: 0px 0px 12px 5px rgba(96, 96, 96, 0.25)
+.follow-us
+	padding: 70px 0
+	background: #FCFCFC
+.follow-us__row 
+	display: flex 
+	justify-content: space-between
+.follow-us__col 
+	width: 540px 
+	max-width: 49%
+	.img 
+		width: 100%
+	.button 
+		width: 140px
+	p 
+		font-size: 18px
+		margin-bottom: 59px
+.follow-us__title
+	margin-bottom: 59px
+.follow-us__img
+	width: 100%
+	margin-bottom: 59px
+.follow-us__social-item
+	display: flex 
+	align-items: center
+	font-size: 32px
+	font-weight: 700
+	text-transform: uppercase
+	cursor: pointer
+	margin-bottom: 15px
+	i 
+		margin-left: 25px
+		display: block
+.latest-news__item
+	margin-bottom: 25px
+.latest-news__item-title
+	font-size: 24px
+	font-weight: 700
+	color: $main-color
+.latest-news__date
+	font-size: 10px
+	text-transform: uppercase
+	margin-bottom: 15px
+	font-weight: 400
+.latest-news__item
+	p 
+		font-size: 18px
+		font-weight: 300
+		margin-bottom: 15px
+	.read-more
+		font-size: 14px
+//end discover style
+
+//start about wine club style
+.about-wine-club
+	padding: 37px 0
+	.container-fluid 
+		display: flex 
+		justify-content: space-between
+		align-items: center
+.reviews--white
+	padding-top: 116px
+.about-wine-club__content
+	width: 600px
+	max-width: 65%
+.about-wine-club__title
+	font-size: 28px 
+	font-weight: 700
+	margin-bottom: 30px
+.about-wine-club__content
+	font-size: 21px
+	padding-left: 15px
+	p 
+		margin-bottom: 25px
+	p:last-child 
+		margin-bottom: 0
+//end about wine club style
+
+//start expiriences style
+.expiriences
+	background: #F9F9F9
+	padding: 80px 0
+.expiriences__row
+	display: flex 
+	justify-content: space-between
+	align-items: center
+.expiriences__images-wrapper
+	display: flex
+	align-items: flex-start
+	img 
+		display: block
+		margin-left: 30px
+	img:first-child 
+		margin-top: 60px
+.expirences__title
+	font-size: 42px 
+	font-weight: 700
+.expiriences
+	p 
+		font-size: 28px
+.expiriences--white
+	background: transparent
+.expiriences__row
+	display: flex 
+	justify-content: space-between
+.expiriences__content
+	width: 570px
+	max-width: 100%
+.expirences__title
+	line-height: 1
+	margin-bottom: 20px
+//end expiriences style
+
+
+//start plans style
+.plans
+	padding: 80px 0
+.plans--grey
+	background: #fbfbfb	
+.plans__title
+	font-size: 36px 
+	font-weight: 700
+	text-transform: uppercase
+	margin-bottom: 55px
+.plan__item-title
+	font-size: 28px
+	font-weight: 700
+	border-bottom: 3px solid #A0B2C6
+	margin-bottom: 15px
+.plan__item-title.gold
+	border-color: #C9B037
+.plan__item-title.silver
+	border-color: #D7D7D7
+.plan__item
+	font-size: 18px
+	.img 
+		width: 100%
+		margin-bottom: 15px
+	.home-item__list-item
+		margin-bottom: 2px
+.wine-club__sub-text
+	margin-top: 30px
+.button-join-now
+	margin-top: 50px
+	width: 158px
+	img 
+		display: block
+		margin-left: 10px
+.plan__item
+	width: 360px 
+	max-width: 100%
+	margin: 0 auto
+//end plans style
+.home-page,
+.follow-us
+	.container-fluid 
+		width: 1200px 
+		max-width: 95vw 
+.section__sub-text
+	width: 619px
+	margin: 0 auto
+	font-size: 18px
+	margin-bottom: 60px
+	max-width: 100%
+.events__title
+	margin-bottom: 15px
+.expiriences__slider
+	width: 502px
+	max-width: 50%
+.quote-icon
+	display: block 
+	margin: 0 auto
+	margin-bottom: 32px
+	width: 35px
+.event-slider-item
+	p 
+		font-size: 20px
+		line-height: 1.2
+		margin-bottom: 15px
+.company-name
+	font-weight: 500
+	font-size: 16px 
+	font-family: $primary-font
+	margin-bottom: 32px
+.event-page__section
+	overflow: hidden
+	.container-fluid 
+		width: 1250px 
+		max-width: 95vw
+.buttons-wrapper 
+	display: flex
+	justify-content: space-between
+	margin: 0 auto
+	margin-top: 70px
+	width: 430px 
+	max-width: 100%
+	.button 
+		padding: 0 22px
+
+//start modal style
+.modal-window
+	width: 100%
+	height: 100vh
+	z-index: 99999
+	overflow-y: auto
+	background: rgba(43, 39, 38, 0.9)
+	position: fixed 
+	top: 0 
+	left: 0
+	bottom: 0
+.modal-content
+	background: #fff
+	width: 1000px 
+	max-width: 100%
+	height: auto
+	top: 3.5vw
+	left: 50%
+	transform: translateX(-50%)
+	padding: 45px 32px
+	padding-top: 100px
+	font-size: 18px
+	line-height: 2
+.close-modal
+	position: absolute
+	top: 45px
+	right: 32px
+	cursor: pointer
+.modal-window 
+	display: none
+//end modal style
+.event-page__section-white
+	background: transparent
+.shif-info
+	font-size: 18px
+.buttons-shif
+	justify-content: center 
+	display: flex
+	margin-top: 70px
+	.button
+		padding: 0 22px
+.follow-us--grey
+	background: #F9F9F9
+.past-members
+	padding-bottom: 100px
+	.col-md-4 
+		margin-bottom: 30px
+	.h2 
+		margin-bottom: 30px
+	a 
+		width: 100%
+		display: flex 
+		position: relative
+		color: $white
+.past-members__img
+	width: 100%
+.past-members__description
+	position: absolute 
+	top: 0 
+	left: 0 
+	width: 100% 
+	height: 100% 
+	display: flex 
+	flex-direction: column
+	justify-content: center
+	text-align: center
+	align-items: center 
+	color: #FDFEFB 
+	background: linear-gradient(0deg, rgba(43, 39, 38, 0.75), rgba(43, 39, 38, 0.75))
+	font-size: 24px
+	font-family: $primary-font
+	text-transform: uppercase 
+	font-weight: 400
+	opacity: 0
+	transition: all 0.3s
+	i 
+		width: 25px
+		margin-top: 20px
+.past-members__item:hover .past-members__description
+	opacity: 1
+.buttons-wrapper--events
+	width: 540px 
+	display: flex
+	justify-content: space-between
+	margin-top: 60px
+
+	.button 
+		font-size: 14px
+		position: relative
+
+	.button:first-child 
+		width: 194px
+	.button:nth-child(2)
+		width: 300px
+.plus 
+	cursor: pointer
+	position: relative
+	width: 10px 
+	height: 10px
+	display: flex 
+	justify-content: center 
+	align-items: center
+	margin-left: 15px
+.plus-row
+	width: 10px 
+	height: 2px
+	background: $main-color
+	border-radius: 2px
+.plus-row:nth-child(2)
+	transform: rotate(90deg) 
+	position: absolute
+.buttons-wrapper--events
+	display: flex 
+	align-items: center
+.upcoming-event-content
+	position: absolute 
+	top: 103%
+	left: 0
+	border: 1px solid $main-color
+	padding: 15px
+	border-top: none
+	width: 100%
+	background: #fff
+	display: none
+	text-transform: none
+.plus.active
+	.plus-row:nth-child(2)
+		display: none
 @import "media"
 
 

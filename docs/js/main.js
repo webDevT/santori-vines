@@ -22,4 +22,29 @@ $('.slider').slick({
 })
 //end slider intit
 
+//start close modal
+$('.close-modal').click(function(){
+  $('.modal-window').fadeOut();
+})
+//end close modal
+
+jQuery(function($){
+  $(document).mouseup(function (e){ 
+    var div = $(".modal-content"); 
+    var div2 = $(".modal-window");
+    if (!div.is(e.target) 
+        && div.has(e.target).length === 0) {
+      div2.fadeOut();
+    }
+  });
+});
+
+$('.our-menu').click(function(){
+  $('.modal-window').fadeIn();
+})
+
+$('.upcoming-ev').click(function(){
+  $('.upcoming-event-content').slideToggle();
+  $('.plus').toggleClass('active');
+})
 });
